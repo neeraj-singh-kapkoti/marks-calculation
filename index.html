@@ -19,10 +19,11 @@
         e = e + f;
         result = a + c + e;
         avg = (result / 4300)*100;
+        avg = parseFloat(avg).toFixed(2)
 
         document.write("The Total marks out of 4300 :" + "<b>" + result + "<br>" + "</br>" + "</br>");
 
-        document.write("The overall percentage is  :" + "<b>" + avg + "<b>" + "</br>");
+        document.write("The overall percentage is  :" + "<b>" + avg + "<b>" +"%"+ "</br>");
 
     }
 </script>
