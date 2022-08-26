@@ -1,0 +1,48 @@
+<script language="JavaScript">
+    var a;//Global variable
+    var b;
+    var c;
+    var e;
+    var f;
+    var result = 0; //Global variable
+    var avg = 0; //Global variable
+
+    function Calculate() {
+        a = parseInt(form1.txtNum1.value);
+        b = parseInt(form1.txtNum2.value);
+        c = parseInt(form1.txtNum3.value);
+        d = parseInt(form1.txtNum4.value);
+        e = parseInt(form1.txtNum5.value);
+        f = parseInt(form1.txtNum6.value);
+        a = (a + b) / 2;
+        c = (c + d) * 0.75;
+        e = e + f;
+        result = a + c + e;
+        avg = result / 4300;
+
+        document.write("The Total is out of 4300 :" + "<b>" + result + "<br>" + "</br>" + "</br>");
+
+        document.write("The overall percentage is  :" + "<b>" + avg + "<b>" + "</br>");
+
+    }
+</script>
+
+<html>
+
+<head></head>
+
+<body>
+    <h2>LE Marks Calculation</h2>
+    <form name="form1">
+        <b>Enter Marks 3d:</b><INPUT type="textbox" name="txtNum1"> </br></br>
+        <b>Enter Marks 4th:</b><INPUT type="textbox" name="txtNum2"> </br></br>
+        <b>Enter Marks 5th:</b><INPUT type="textbox" name="txtNum3"> </br></br>
+        <b>Enter Marks 6th:</b><INPUT type="textbox" name="txtNum4"> </br></br>
+        <b>Enter Marks 7th:</b><INPUT type="textbox" name="txtNum5"> </br></br>
+        <b>Enter Marks 8th:</b><INPUT type="textbox" name="txtNum6"> </br></br>
+
+        <INPUT type="button" Value="Calculate" onClick='Calculate()'>
+    </form>
+</body>
+
+</html>
